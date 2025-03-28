@@ -15,8 +15,10 @@
         android:layout_marginBottom="32dp"
         android:text="Дневник настроений и задач"
         android:textColor="@android:color/white"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
 
     <Button
         android:id="@+id/btn_tasks"

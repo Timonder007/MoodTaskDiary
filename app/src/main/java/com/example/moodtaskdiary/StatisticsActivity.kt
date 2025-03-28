@@ -26,10 +26,10 @@ class StatisticsActivity : AppCompatActivity() {
 
         val statisticsText = StringBuilder()
         statisticsText.append("Настроение: ").append(mood).append("\n")
-        statisticsText.append("Выполненные задачи:\n")
+        statisticsText.append("Задачи:\n")
 
         if (tasks.isEmpty()) {
-            statisticsText.append("Нет выполненных задач.\n")
+            statisticsText.append("Нет задач.\n")
         } else {
             for (task in tasks) {
                 statisticsText.append("- ").append(task).append("\n")

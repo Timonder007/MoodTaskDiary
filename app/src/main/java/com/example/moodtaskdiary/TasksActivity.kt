@@ -7,6 +7,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
+import android.widget.AdapterView
+import android.widget.Toast
 import java.util.HashSet
 
 class TasksActivity : AppCompatActivity() {
@@ -44,6 +46,9 @@ class TasksActivity : AppCompatActivity() {
                 saveTasks()
             }
         }
+        lvTasks.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
+            deleteTask(position)
+        }
 
     }
 
@@ -60,5 +65,11 @@ class TasksActivity : AppCompatActivity() {
         val set = sharedPreferences.getStringSet("tasks", HashSet()) ?: HashSet()
         tasksList.addAll(set)
         adapter.notifyDataSetChanged()
+    }
+    private fun deleteTask(position: Int) {
+        tasksList.removeAt(position)
+        adapter.notifyDataSetChanged()
+        saveTasks()
+        Toast.makeText(this, "Задача удалена!", Toast.LENGTH_SHORT).show()
     }
 }
