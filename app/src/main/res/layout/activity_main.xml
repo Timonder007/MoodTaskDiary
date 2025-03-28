@@ -3,45 +3,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:background="@drawable/gradient_background"
+    android:gravity="center"
+    android:orientation="vertical"
     android:padding="16dp"
     tools:context=".MainActivity">
 
-<TextView
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="Дневник настроений и задач"
-android:textSize="24sp"
-android:textStyle="bold"
-android:textColor="@android:color/white"
-android:layout_marginBottom="32dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Дневник настроений и задач"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-<Button
-android:id="@+id/btn_tasks"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:text="Задачи"
-android:backgroundTint="@color/orange_light"
-android:textColor="@android:color/white"
-android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/btn_tasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/orange_light"
+        android:text="Задачи"
+        android:textColor="@android:color/white" />
 
-<Button
-android:id="@+id/btn_mood"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:text="Настроения"
-android:backgroundTint="@color/orange_light"
-android:textColor="@android:color/white"
-android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/btn_mood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/orange_light"
+        android:text="Настроения"
+        android:textColor="@android:color/white" />
 
-<Button
-android:id="@+id/btn_statistics"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:text="Статистика"
-android:backgroundTint="@color/orange_light"
-android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/btn_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange_light"
+        android:text="Статистика"
+        android:textColor="@android:color/white" />
 
-    </LinearLayout>
+</LinearLayout>

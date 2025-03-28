@@ -15,7 +15,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.MoodTaskDiary">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +22,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.moodtaskdiary.MoodActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MoodTaskDiary" />
+        <activity
+            android:name="com.example.moodtaskdiary.StatisticsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MoodTaskDiary" />
+        <activity
+            android:name="com.example.moodtaskdiary.TasksActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MoodTaskDiary" />
     </application>
 
 </manifest>
